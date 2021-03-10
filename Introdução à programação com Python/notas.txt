@@ -1,0 +1,3 @@
+Rosana Lopes, 10, 10, 9, 8
+Renan Torres, 5, 7, 4, 4
+Gabriel Gustavo, 7, 5, 5, 4
