@@ -17,6 +17,8 @@ def retorna_dado_cep():
     print("Bairro: {}".format(dados_cep['bairro']))
     print("Cidade: {}".format(dados_cep['localidade']))
     print("/************************* FIM *****************************/")
+    print()
+
     return dados_cep
 
 def retorna_dados_pokemon(pokemon):
@@ -30,8 +32,13 @@ def retorna_response(url):
 
 
 if __name__ == '__main__':
-    response = retorna_response('http://globo.com')
-    print(response)
-    #retorna_dado_cep()
-    # dados_pokemon = retorna_dados_pokemon('pikachu')
-    # print(dados_pokemon['sprites']['front_shiny'])
+    while True:
+        # response = retorna_response('http://globo.com')
+        # print(response)
+        retorna_dado_cep()
+        # dados_pokemon = retorna_dados_pokemon('pikachu')
+        # print(dados_pokemon['sprites']['front_shiny'])
+        verifica = input("Deseja continuar? s ou n: ")
+        if verifica == 'n':
+            print("Processo Finalizado...")
+            break
